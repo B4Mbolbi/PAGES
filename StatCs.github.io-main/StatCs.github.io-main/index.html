@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	
+</head>
+<body>
+	<div class="app">
+
+		<div class="sticer">
+			
+			<div class="kill" id='aspect'>
+				<div class="top">
+					<div class="word">Килы</div>
+					<div class="numbers">
+						<div class="minusKill" id='move'>-</div>
+						<div class="num" id='numKill'>10</div>
+						<div class="plusKill" id='move'>+</div>
+					</div>
+				</div>
+				<div class="bottom">
+					<input id='skill' class="slider" type="range" min="0" max="52" value="10" oninput="sliderKill(this.value)"> 
+				</div>
+			</div>				
+
+			<div class="deth" id='aspect'>
+				<div class="top">
+					<div class="word">Смерти</div>
+					<div class="numbers">
+						<div class="minusDeth" id='move'>-</div>
+						<div class="num" id='numDeth'>5</div>
+						<div class="plusDeth" id='move'>+</div>
+					</div>
+				</div>
+
+				<div class="bottom">
+					<input id='sdeth' class="slider" type="range" min="0" max="30" value="5" oninput="sliderDeth(this.value)"> 
+				</div>
+
+			</div>				
+
+			<div class="sci" id='aspect'>
+				<div class="top">
+				<div class="word">SCI</div>
+				<div class="numbers">
+					<div class="minusSci" id='move'>-</div>
+					<div class="num" id='numSci'>5</div>
+					<div class="plusSci" id='move'>+</div>
+				</div>
+				</div>
+
+				<div class="bottom">
+					<input id='ssci' class="slider" type="range" min="0" max="10" value="5" oninput="sliderSci(this.value)"> 
+				</div>
+
+			</div>				
+
+			<div class="help" id='aspect'>
+				<div class="top">
+				<div class="word">Помощи</div>
+				<div class="numbers">
+					<div class="minusHelp" id='move'>-</div>
+					<div class="num" id='numHelp'>5</div>
+					<div class="plusHelp" id='move'>+</div>
+				</div>
+				</div>
+
+				<div class="bottom">
+					<input id='shelp' class="slider" type="range" min="0" max="15" value="5" oninput="sliderHelp(this.value)"> 
+				</div>
+			</div>	
+
+
+			<div class="btnSend">
+				<button class='sendData' onclick="sendData()">Посчитать</button>
+			</div>
+
+		</div>
+
+	</div>
+<script src="https://telegram.org/js/telegram-web-app.js"></script>
+<script src="main.js"></script>	
+</body>
+</html>				

@@ -1,0 +1,192 @@
+*{
+	widows: auto;
+	height: auto;
+	margin: 0px;
+	padding: 0px;
+	background: linear-gradient(to top, red, blue);
+	font-family: 'COURIER NEW', sans-serif;
+/*	color: white;*/
+	font-size: 1.1em;
+	box-sizing: border-box; 
+}
+.app{
+	widows: 100%;
+	height: 100%;
+	
+	display: flex;
+	justify-content: top;
+	align-items: center;
+	flex-direction: column;
+
+}
+
+.sticer{
+	width: 90%;
+	height: 1000px;
+	border-radius: 20px;
+	margin: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	font-weight: 700;
+	transition: 2s;
+}
+
+
+.top{
+	width: 100%;
+	height: 90%;
+	display: flex;
+	flex-direction: row;
+	background: transparent;
+}
+.bottom{
+	width: 100%;
+	background: transparent;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#aspect{
+	display: flex;
+	width: 90%;
+	height: 20%;
+	flex-direction: column;
+	margin: 20px;	
+	padding: 10px;
+	border-radius: 30px;
+	color: white;
+	text-shadow: purple 3px 3px 0, purple -3px -3px 0, 
+                 purple -3px 3px 0, purple 3px -3px 0;
+    transition: 2s;
+}
+
+.kill{
+	background-image: url('kills.jpg');
+	background-size: 100% 100%;
+}.deth{
+	background-image: url('deth.jpg');
+	background-size: 100% 100%;
+}.sci{
+	background-image: url('sci.jpeg');
+	background-size: 100% 100%;
+}.help{
+	background-image: url('helping.jpg');
+	background-size: 100% 100%;
+
+
+}
+
+.word{
+	width: 50%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: transparent;
+	border-radius: 50px;
+}
+.numbers{
+	width: 150px;
+	height: 100%;
+	z-index: 1;
+	display: flex;
+	flex-direction: row;
+	overflow: auto;
+	flex-shrink: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: transparent;
+
+}
+.num{
+	position: relative;
+	width: 80px;
+	height: 50px;
+	border: 5px solid white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 40px;
+	margin-right: 10px;
+	margin-left: 10px;
+	font-weight: 700;
+	transition: 1s;
+	background: transparent;
+}
+ #move{
+ 	width: 50px;
+ 	height: 100%;
+ 	display: flex;
+ 	justify-content: center;
+ 	align-items: center;
+ 	font-size: 1.5em;
+ 	background: transparent;
+ 	
+ }
+
+
+.slider {
+    appearance: none; /* removes browser-specific styling */
+    width: 300px; /* width of slider */
+    height: 15px; /* height of slider */
+     /* orange background */
+    outline: none; /* remove outline */
+    border-radius: 50px; /* round corners */
+    transition: 0.1s;
+}
+
+.slider::-webkit-slider-thumb {
+  appearance: none; /* removes browser-specific styling */
+  width: 30px; /* handle width */
+  height: 30px; /* handle height */
+  border-radius: 50%; /* make it circular */
+  background: white; /* white color */
+  cursor: pointer; /* cursor on hover */
+  transition: 0.5s;
+  border: 5px solid white;
+}
+#skill{
+	background: linear-gradient(to right, red, blue,green, green);
+}
+#sdeth{
+	background: linear-gradient(to right, green, blue, red);
+}
+#ssci{
+	background: linear-gradient(to right, red, blue,green, green);
+}
+#shelp{
+	background: linear-gradient(to right, red, blue,green, green);
+
+}
+
+
+.btnSend{
+	width: 100%;
+	height: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: 1s;
+	background: transparent;
+}
+.sendData{
+	width: 90%;
+	height: 90px;
+	
+	appearance: none;
+	color: white;
+	border: 10px solid white;
+	border-radius: 40px;
+	transition: 1s;
+}
+
+
+.sendData:focus {
+  outline: none;
+  box-shadow: 0 0 0 4px #cbd6ee;
+  transition: 1s;
+}
